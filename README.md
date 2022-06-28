@@ -85,9 +85,10 @@ Install-Package Microsoft.Extensions.Caching.StackExchangeRedis
 ```
 services.AddStackExchangeRedisCache(options =>  
 {  
-    options.Configuration = "localhost:6000";  
+    options.Configuration = "localhost:6379";  
 });  
 ```
+<img src="https://github.com/rkbbd/RedisCaching/blob/master/Distributed%20Redis%20Caching.png">
 
 #### Download:
 https://github.com/microsoftarchive/redis/releases/tag/win-3.0.504
