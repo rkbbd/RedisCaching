@@ -75,6 +75,19 @@ This is similar to Absolute Expiration. It expires as a cached object if it not 
 
 - Minimize the Redis-server.exe and open Redis-cli.exe.
 
+- Install package: Microsoft.Extensions.Caching.StackExchangeRedis
+```
+Install-Package Microsoft.Extensions.Caching.StackExchangeRedis
+```
+
+- In startup.cs/ConfigureServices method Configure Redis cache with a specific port.
+
+```
+services.AddStackExchangeRedisCache(options =>  
+{  
+    options.Configuration = "localhost:6000";  
+});  
+```
 
 #### Download:
 https://github.com/microsoftarchive/redis/releases/tag/win-3.0.504
